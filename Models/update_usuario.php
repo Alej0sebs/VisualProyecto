@@ -12,8 +12,11 @@ if (!$idviejo) {
     exit;
 }
 
+// Encriptar la contraseña antes de actualizar
+$contraseña_hash = password_hash($contraseña, PASSWORD_DEFAULT);
+
 $stmt = $conn->prepare("UPDATE usuarios SET nombre = ?, contraseña = ?, rol = ? WHERE id = ?");
-$stmt->bind_param("ssss", $nombre, $contraseña, $rol, $idviejo);
+$stmt->bind_param("ssss", $nombre, $contraseña_hash, $rol, $idviejo);
 
 try {
     $stmt->execute();

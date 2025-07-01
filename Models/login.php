@@ -11,7 +11,8 @@ if (isset($_POST["Entrar"])) {
 
     if ($result && $result->num_rows === 1) {
         $row = $result->fetch_assoc();
-        if ($row['contraseña'] === $password) {
+        // Aquí debe ir password_verify
+        if (password_verify($password, $row['contraseña'])) {
             $_SESSION['usuario'] = $row['nombre'];
             $_SESSION['rol'] = $row['rol'];
             header('Location: ../Views/Login.php?success=1');

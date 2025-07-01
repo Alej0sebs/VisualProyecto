@@ -6,8 +6,11 @@ $nombre = $_POST['nombre'] ?? '';
 $contraseña = $_POST['contraseña'] ?? '';
 $rol = $_POST['rol'] ?? '';
 
+// Encriptar la contraseña antes de guardar
+$contraseña_hash = password_hash($contraseña, PASSWORD_DEFAULT);
+
 $stmt = $conn->prepare("INSERT INTO usuarios (nombre, contraseña, rol) VALUES (?, ?, ?)");
-$stmt->bind_param("sss",$nombre, $contraseña, $rol);
+$stmt->bind_param("sss", $nombre, $contraseña_hash, $rol);
 
 try {
     $stmt->execute();
