@@ -54,17 +54,19 @@ if (!isset($_SESSION['usuario'])) {
         onclick="editUser()">Editar</a>
       <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true"
         onclick="destroyUser()">Eliminar</a>
-      <!-- ComboBox de reportes -->
-      <select id="comboReportes" class="easyui-combobox" style="width:220px">
-        <option value="">Seleccione un reporte...</option>
-        <option value="reporteFPDF">Reporte PDF</option>
-        <option value="reporteJasper">Reporte PDF con Jasper</option>
-        <option value="reporteCedulaFPDF">Reporte PDF Cédula</option>
-        <option value="reporteCedulaJasper">Reporte PDF Cédula con Jasper</option>
-      </select>
-      <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-print" plain="true" onclick="verReporte()">Ver reporte</a>
     </div>
   <?php endif; ?>
+
+
+  <!-- ComboBox de reportes y botón de reporte para ambos roles -->
+  <select id="comboReportes" class="easyui-combobox" style="width:220px">
+    <option value="">Seleccione un reporte...</option>
+    <option value="reporteFPDF">Reporte PDF</option>
+    <option value="reporteJasper">Reporte PDF con Jasper</option>
+    <option value="reporteCedulaFPDF">Reporte PDF Cédula</option>
+    <option value="reporteCedulaJasper">Reporte PDF Cédula con Jasper</option>
+  </select>
+  <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-print" plain="true" onclick="verReporte()">Ver reporte</a>
 
 
   <div id="dlg" class="easyui-dialog" style="width:400px"
