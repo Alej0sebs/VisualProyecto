@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Universidad Técnica de Ambato</title>
-  <link rel="stylesheet" href="/Cuarto/css/nav.css">
-  <link rel="stylesheet" href="/Cuarto/css/inicio.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/inicio.css">
 </head>
 
 <body>
   <header>
     <div class="logo-container">
-      <img src="/Cuarto/imagenes/descarga.png" alt="Logo Universidad Técnica de Ambato" width="90%">
+      <img src="/imagenes/descarga.png" alt="Logo Universidad Técnica de Ambato" width="90%">
     </div>
   </header>
 

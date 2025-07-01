@@ -11,20 +11,19 @@ if (!isset($_SESSION['usuario'])) {
 <head>
   <meta charset="UTF-8">
   <title>Registro de estudiantes</title>
-  <link rel="stylesheet" type="text/css" href="/Cuarto/css/servicios.css">
-  <link rel="stylesheet" type="text/css" href="/Cuarto/css/nav.css">
-
-  <link rel="stylesheet" type="text/css" href="/Cuarto/jquery/themes/default/easyui.css">
-  <link rel="stylesheet" type="text/css" href="/Cuarto/jquery/themes/icon.css">
-  <link rel="stylesheet" type="text/css" href="/Cuarto/jquery/themes/color.css">
-  <link rel="stylesheet" type="text/css" href="/Cuarto/jquery/demo/demo.css">
-  <script type="text/javascript" src="/Cuarto/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="/Cuarto/jquery/jquery.easyui.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/servicios.css">
+  <link rel="stylesheet" type="text/css" href="/css/nav.css">
+  <link rel="stylesheet" type="text/css" href="/jquery/themes/default/easyui.css">
+  <link rel="stylesheet" type="text/css" href="/jquery/themes/icon.css">
+  <link rel="stylesheet" type="text/css" href="/jquery/themes/color.css">
+  <link rel="stylesheet" type="text/css" href="/jquery/demo/demo.css">
+  <script type="text/javascript" src="/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/jquery/jquery.easyui.min.js"></script>
 </head>
 
 <body>
   <header>
-    <img src="/Cuarto/imagenes/descarga.png" height="auto" width="100%">
+    <img src="/imagenes/descarga.png" height="auto" width="100%">
   </header>
 
   <?php include 'nav.php'; ?>
@@ -33,7 +32,7 @@ if (!isset($_SESSION['usuario'])) {
   <p>Registro de estudiantes</p>
 
   <table id="dg" title="Usuarios" class="easyui-datagrid" style="width:800px;height:300px"
-  url="/Cuarto/Models/get_users.php"
+  url="/Models/get_users.php"
   toolbar="#toolbar" pagination="true" rownumbers="true" fitColumns="true" singleSelect="true">
     <thead>
       <tr>

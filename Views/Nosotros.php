@@ -5,19 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FISEI - UTA</title>
-  <link rel="stylesheet" href="/Cuarto/css/nav.css" />
-  <link rel="stylesheet" href="css/nosotros.css">
-  
-
-
+  <link rel="stylesheet" href="/css/nav.css" />
+  <link rel="stylesheet" href="/css/nosotros.css">
 </head>
 
 <body>
   <header>
-    <img src="/Cuarto/imagenes/descarga.png" height="auto" width="100%"></img>
+    <img src="/imagenes/descarga.png" height="auto" width="100%">
   </header>
   <?php include 'nav.php'; ?>
-
 
   <main>
     <section class="resumen">
@@ -61,8 +57,6 @@
           gestión de proyectos TI.</li>
       </ul>
     </section>
-
-   
 
     <section>
       <h2>Contacto</h2>

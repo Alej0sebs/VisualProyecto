@@ -1,3 +1,4 @@
+<?php
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,20 +6,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contáctanos - FISEI</title>
-  <link rel="stylesheet" href="/Cuarto/css/nav.css" />
-  <link rel="stylesheet" href="/Cuarto/css/contacto.css" />
-  
+  <link rel="stylesheet" href="/css/nav.css" />
+  <link rel="stylesheet" href="/css/contacto.css" />
 </head>
 
 <body>
   <header>
     <div class="logo-container">
-      <img src="/Cuarto/imagenes/descarga.png" alt="Logo Universidad Técnica de Ambato" />
+      <img src="/imagenes/descarga.png" alt="Logo Universidad Técnica de Ambato" />
     </div>
   </header>
 
   <?php include 'nav.php'; ?>
-
 
   <main>
     <section class="perfil">
@@ -27,8 +26,7 @@
         <li><strong>Nombre:</strong> Alejandro Rivera</li>
         <li><strong>Email:</strong> <a href="mailto:alejo@example.com">arivera1806@uta.edu.ec</a></li>
         <li><strong>Teléfono:</strong> 0992990885</li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/Alej0Sebs" target="_blank">github.com/Alej0Sebs</a>
-        </li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/Alej0Sebs" target="_blank">github.com/Alej0Sebs</a></li>
         <li><strong>Ubicación:</strong> Latacunga, Ecuador</li>
       </ul>
     </section>
@@ -47,7 +45,6 @@
 
         <button type="submit">Enviar</button>
       </form>
-
     </section>
   </main>
 
@@ -55,5 +52,4 @@
     <p>© 2025 Universidad Técnica de Ambato · FISEI</p>
   </footer>
 </body>
-
 </html>

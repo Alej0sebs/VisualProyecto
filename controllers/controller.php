@@ -1,20 +1,22 @@
 <?php
 // Include the necessary files
 include_once "models/model.php";
+
 class MvcController {
- 
-    public function enlacesPaginasController(){
-        //get post
-        if(isset($_GET["action"])){
+
+    public function enlacesPaginasController() {
+        // Lista de páginas válidas
+        $paginas = ["Inicio", "Nosotros", "Servicios", "Contactanos", "Login"];
+        // Obtener la acción solicitada
+        if (isset($_GET["action"]) && in_array($_GET["action"], $paginas)) {
             $enlacesController = $_GET["action"];
         } else {
-            $enlacesController = "inicio.php";
+            $enlacesController = "Inicio";
         }
-        $respuesta= EnlacesPaguinas::enlacesPaginasModel($enlacesController);
-        // Mostrar por consola el valor de $respuesta
+        // Obtener la ruta de la vista desde el modelo
+        $respuesta = EnlacesPaguinas::enlacesPaginasModel($enlacesController);
+        // Incluir la vista correspondiente
         include $respuesta;
-        //Demostracion de uso de la variable $respuesta
-        
     }
 }
 ?>

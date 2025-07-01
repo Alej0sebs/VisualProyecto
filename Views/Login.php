@@ -32,7 +32,7 @@ if (isset($_SESSION['usuario'])) {
 
       <input type="submit" name="Entrar" value="Entrar" />
     </form>
-    <a href="/Cuarto/index.php" style="display: inline-block; margin-top: 0.5rem; padding: 0.5rem 1rem; background-color: #ccc; color: #333; text-decoration: none; border-radius: 4px;">Cancelar</a>
+    <a href="/index.php" style="display: inline-block; margin-top: 0.5rem; padding: 0.5rem 1rem; background-color: #ccc; color: #333; text-decoration: none; border-radius: 4px;">Cancelar</a>
   </div>
 </body>
 </html>
